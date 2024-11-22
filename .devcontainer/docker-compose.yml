@@ -1,4 +1,4 @@
-name: "testvolumemount_compose_stack"
+name: "testvolumemount_template_compose_stack"
 
 services:
 
@@ -8,8 +8,6 @@ services:
       dockerfile: .devcontainer/Dockerfile
       target: develop
     command: tail -f /dev/null
-    volumes:
-      - ..:/workspace:cached
     links:
       - db
     depends_on:
