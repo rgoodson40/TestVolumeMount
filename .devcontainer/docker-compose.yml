@@ -1,4 +1,4 @@
-name: "testvolumemount_template_compose_stack"
+name: "template-rails-mysql-compose-stack"
 
 services:
 
