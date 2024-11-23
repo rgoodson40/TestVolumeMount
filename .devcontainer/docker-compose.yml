@@ -3,12 +3,12 @@ name: "template-rails-mysql-compose-stack"
 services:
 
   app:
-    image: ruby:3.2.5
+    image: "ruby:3.2.5"
     # build:
     #   context: ..
     #   dockerfile: .devcontainer/Dockerfile
     #   target: develop
-    # command: apt-get update -qq
+    command: apt-get update -qq
     links:
       - db
     depends_on:
