@@ -3,10 +3,11 @@ name: "template-rails-mysql-compose-stack"
 services:
 
   app:
-    build:
-      context: ..
-      dockerfile: .devcontainer/Dockerfile
-      target: develop
+    image: ruby:3.2.5
+    # build:
+    #   context: ..
+    #   dockerfile: .devcontainer/Dockerfile
+    #   target: develop
     command: tail -f /dev/null
     links:
       - db
