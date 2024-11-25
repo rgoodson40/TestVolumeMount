@@ -4,9 +4,9 @@ RUN mkdir /workspace
 WORKDIR /workspace
 RUN apt-get update -qq && \
     apt-get -y install build-essential
-# ADD Gemfile /workspace/Gemfile
-# ADD Gemfile.lock /workspace/Gemfile.lock
-# RUN bundle install
+ADD Gemfile /workspace/Gemfile
+ADD Gemfile.lock /workspace/Gemfile.lock
+RUN bundle install
 
 # Stage 2: develop (for local development setup)
 FROM builder AS develop
