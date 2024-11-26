@@ -1,7 +1,7 @@
 # Stage 1: builder (base image that can be used for local development or for deployments)
 FROM ruby:3.2.5 AS builder
-RUN mkdir /workspace
-WORKDIR /workspace
+# RUN mkdir /workspace
+WORKDIR /workspaces
 RUN apt-get update -qq && \
     apt-get -y install build-essential
 # ADD Gemfile /workspace/Gemfile
