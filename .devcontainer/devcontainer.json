@@ -1,6 +1,5 @@
 {
     "name": "template-rails-mysql",
     "dockerComposeFile": ["docker-compose.yml"],
-    "service": "app",
-    //"workspaceFolder": "/workspace"
+    "service": "app"
 }
